@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js" integrity="sha512-ELgdXEUQM5x+vB2mycmnSCsiDZWQYXKwlzh9+p+Hff4f5LA+uf0w2pOp3j7UAuSAajxfEzmYZNOOLQuiotrt9Q==" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+<div id="main-container" class="light">
+    <div id="todo-title">
+        <span>TODO</span>
+        <div id="todo-mode" class="light">
+            <img id="todo-mode-img" style="width: 1.5rem" src="img/sun-solid.svg" alt="">
+        </div>
+    </div>
+    <div id="todo-container" class="light">
+        <div id="todo-add" class="light">
+            <label for="todo-input"></label>
+            <div id="todo-click" class="todo-circle light"></div>
+            <input id="todo-input" class="light" type="text" placeholder="Create a new todo...">
+        </div>
+        <div id="todo-list" class="light">
+            <div id="items-list" class="light">
+                <div class="handle notDone">
+                    <div class="todo-circle">
+                        <img class="todo-circle-checkmark" src="img/icons8-done.svg" alt="">
+                    </div>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <div class="todo-delete">
+                        <span class="material-icons">close</span>
+                    </div>
+                </div>
+                <div class="handle notDone">
+                    <div class="todo-circle"></div>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <div class="todo-delete">
+                        <span class="material-icons">close</span>
+                    </div>
+                </div>
+                <div class="handle notDone">
+                    <div class="todo-circle"></div>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <div class="todo-delete">
+                        <span class="material-icons">close</span>
+                    </div>
+                </div>
+            </div>
+            <div id="todo-stats" class="light">
+                <div id="todo-items-left">
+                    <span id="items-count">5</span>
+                    <span>items left</span>
+                </div>
+                <div id="todo-filter" class="light">
+                    <span id="todo-show-all" class="clicked">All</span>
+                    <span id="todo-show-active">Active</span>
+                    <span id="todo-show-completed">Completed</span>
+                </div>
+                <div id="todo-clear">Clear Completed</div>
+            </div>
+
+        </div>
+        <div id="todo-filter-alt" class="light">
+
+        </div>
+        <div id="todo-instructions" class="light">Drag and drop to reorder list</div>
+    </div>
+</div>
+<div id="page-background" class="light">
+<!--    <img id="page-background-img" class="light" src="" alt="">-->
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
